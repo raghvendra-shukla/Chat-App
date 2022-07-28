@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="ChatApp.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="chatapp.jpg" alt="Image is not loaded">
+        <h1>Hey Buddy, Welcome to the chat app</h1>
+    </nav>
+    <div class="container">
+        <!-- <div class="message right">This is messageRight</div>
+        <div class="message left">This is messageLeft</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInput" id="messageInput">
+            <button id="btn" class="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

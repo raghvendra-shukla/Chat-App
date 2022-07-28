@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+
+}
+nav{
+    background-color: black;
+    display: flex;justify-content: center;
+    align-items: center;
+}
+nav img{
+    height: 100px;
+    filter: invert(1);
+}
+nav h1{
+    color: rgb(236, 62, 62);
+    font-family: 'Carter One', cursive;
+    font-size: 26px;
+}
+.container{
+    background-image: url(background.jpg);
+    width: 50%;
+    margin: auto;
+    height: 32rem;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.message{
+    color: white;
+    padding: 8px;
+    background-color: rgb(236, 62, 62);
+    height: 30px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-family: 'Teko', sans-serif;
+    font-size: 23px;
+}
+.right{
+    float: right;
+    clear: both;
+}
+.left{
+    float: left;
+    clear: both;
+}
+.send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#messageInput{
+    width: 45%;
+    height: 22px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Teko', sans-serif;
+    font-size: 22px;
+    margin: 5px;
+    padding: 7px;
+}
+.submit{
+    margin: 1px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Teko', sans-serif;
+    font-size: 19px;
+    height: 33px;
+    width: 50px;
+    padding: 2px;
+}
+#send-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
