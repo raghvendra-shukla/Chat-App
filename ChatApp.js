@@ -17,11 +17,23 @@ const append=(message,position)=>{
     }
 }
 
+const appendCenter=(message,position)=>{
+    const messageElement=document.createElement("div");
+    messageElement.innerText=message;
+    messageElement.classList.add("message");
+    messageElement.classList.add(position);
+    messageElement.classList.add("join");
+    messageContainer.append(messageElement);
+    if(position=="left"){
+        audio.play();
+    }
+}
+
 const Name=prompt("Enter your name to join");
 socket.emit("new-user-joined", Name);
 
 socket.on("user-joined",Name=>{
-    append(`${Name} joined the chat`,"right");
+    appendCenter(`${Name} joined the chat`,"right");
 });
 
 socket.on("receive",data=>{
@@ -29,7 +41,7 @@ socket.on("receive",data=>{
 });
 
 socket.on("left",Name=>{
-    append(`${Name} left the chat`,"right");
+    appendCenter(`${Name} left the chat`,"right");
 });
 
 form.addEventListener("submit",(e)=>{
