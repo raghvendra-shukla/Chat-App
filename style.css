@@ -29,6 +29,7 @@ nav h1{
     height: 32rem;
     border: 2px solid black;
     border-radius: 5px;
+    overflow-y: auto;
 }
 .message{
     color: white;
@@ -82,4 +83,13 @@ nav h1{
     align-items: center;
     justify-content: center;
 
+}
+.join{
+    float: none;
+    max-width: 30%;
+    text-align: center;
+    margin: auto;
+    padding: 2px;
+    margin-top: 5px;
+    background: rgb(236, 62, 62);
 }
